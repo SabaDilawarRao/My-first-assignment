@@ -1,0 +1,143 @@
+
+
+Import java.util.scanner; 
+
+Class stack
+{
+    Static scanner sc =new scanner(system.in);
+    Static int stack[],top=-1,size;
+{
+stack.create();
+}
+Public static void main (string []args)
+{
+    int ch, item;
+  While (true)
+{
+System.out.println(“1.Push”);
+System.out.println(“2Pop”);
+System.out.println(“3Peek”);
+System.out.println(“4Traverse”);
+System.out.println(“5Quit”);
+System.out.println(“enter your choice:”);
+Ch=stack.sc.nextInt();
+Switch(ch)
+{
+Case 1: system.out.print(“enter element:”);
+      Item=sc.nextint();
+      Stack.push(item);
+      break;
+Case 2:item=stack.pop();
+     If(item==0)
+{ 
+  system.out.println(“stack is underflow/n”);      
+}
+else
+{
+  System.out.println(“popped item:”+item);
+}
+break:
+Case 3:item=stack.peek();
+     If (item==0)
+{
+System.out.println(“stack is underflow/n);
+}
+else
+{
+System.out.println(peek item:”+item);
+}
+Break;
+Case 4:stack.Traverse();
+break:
+Case 5:system.exit(1);
+default: system.out.println(“invalid choice/n);
+     }
+   }
+}
+Static void create()
+{
+ System.out.print(“enter size of stack:”);
+ Size=stack.sc.nextint():
+ Stack.stack=newint”[size];
+ System.out.println(“stack created with size:”+size);
+}
+ Static void push (int item)
+{
+    if(stack. is full())
+{
+ System.out.println(“stack is overflow/n”):
+}
+else
+{
+  stack[++top]=item;
+Static boolean is full()
+{
+  If (top==size-1)
+}
+  Return true;
+}
+else
+{
+Return false;
+}
+}
+Static int pop()
+{
+  If (stack. is empty())
+{
+Return 0:
+}
+else
+  {
+Return stack[top--];
+  }
+}
+Static Boolean is empty()
+{
+ If (top==-1)
+{
+ Return true;
+}
+else
+{
+Static int peek()
+{
+If(stack. is empty())
+{
+Return 0;
+}
+flase
+ {
+Return stack[top];
+ }
+}
+Static void traverse()
+{
+ If (stack. is empty())
+{
+ System.out.println(“stack is empty”);
+}
+else
+{
+System.out.println(“elements of stack:”);
+Static void traverse()
+{
+ If (stack. is empty())
+{
+ System.out.println(“stack is empty”);
+}
+else
+{
+System.out.println(“elements of stack:”);
+for(int i=top;i>=0;i--)
+{
+System.out.println(stack[i];
+     }
+    }
+  }
+}
+
+ 
+
+
+
